@@ -7,8 +7,8 @@ To download the source code, you can clone with git or download as a zip file (c
 Unzip the file and then move to your remote server using VScode.
 
 credit:
-Kanit Subthawetheerakul
-Kittipoom Kittipoomwong
-Suphakorn Insee
-Suttipong Promprakarn
+Kanit Subthawetheerakul,
+Kittipoom Kittipoomwong,
+Suphakorn Insee,
+Suttipong Promprakarn,
 Inthanon Ratnavardhana
