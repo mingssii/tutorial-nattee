@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nut T</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="Nut_T">
+        <div id="PicNname">
+            <image src="https://cdn.discordapp.com/attachments/1129330901210374251/1152909992081498183/image-removebg-preview.png"  alt="Logo">
+            Nut T
+        </div>
+        <h2> Let's study together</h2>
+        <!-- ใส่โลโก้หัว -->
+        
+        <!-- ใส่ search element -->
+        <div id="main_table">
+            <table id="subject_table">
+                <thead>
+                    <tr>
+                        <th class = "subjectHead">Subject</th>
+                        <th class = "dateTimehead">Date</th>
+                        <th class="empty-cell">and Time</th>
+                        <th class = "cell">About</th>
+                        <th class="empty-cell"></th>
+                        <th class = "cell">Participant</th>
+                        <th class="empty-cell"></th>
+                        <th class = "cell">Contact</th>
+                    </tr> 
+                </thead>
+                <tbody id="body_table">
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td id = "select_foot"><select id = "select_subject" class = "dropDown"> 
+                            <option> --Subject-- </option>
+                            
+                        </select></td>
+                        <td><input type = "date" placeholder = "dd-mm-yyyy" id = "date_input" class = "fill_date" class = dateTimehead/></td>
+                        <td class="timeFoot"><input type = "time" step="900" id = "startTime_input" class = "fill_time"/> <input type = "time" step="900" id = "endTime_input" class = "fill_number"/></td>
+                        <td><input type="text" id = "about_input" class = "fill_text"/></td>
+                        <td class = "emptycell"></td>
+                        <td><input type="number" id = "numberOfmember_input" class = "fill_number"/> </td>
+                        <td><input type="text" id = "contact_input" class = "fill_text"/></td>
+                        <td><button id = "addFooter">add</button></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <!-- Viewpopup\ -->
+    <div class="con_view_popup">
+        <div id="view_popup" class="view_popup">
+            <button id="close_view_button" onclick="closeViewButton()">x</button>
+            <h3>Member</h3>
+        </div>
+    </div>
+    <script type="module" src="scripts/main.js"></script>
+    <script>
+            function closeViewButton() {
+                let popup = document.getElementById("view_popup");
+                popup.classList.remove("open-view_popup");
+                popup.innerHTML = `<button type="button" id="close_view_button" onclick="closeViewButton()">x</button>
+                                        <h3>Member</h3>`
+                console.log("ok");
+            }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600&display=swap");
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(229, 230, 232);
+}
+h1 {
+  font-size: 70px;
+  border-bottom: 2px solid black;
+  border-bottom-style: groove;
+  width: 300px;
+  text-align: right;
+  padding: 0px;
+ 
+
+}
+
+h2 {
+  text-align: right;
+  font-size: 15px;
+  width: 290px;
+  
+}
+h3 {
+  font-size: 16px;
+}
+h4 {
+  font-size: 14px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+tr {
+  font-size: 16px;
+}
+
+td {
+  padding: 4px;
+  font-size: 14px;
+}
+tr:nth-child(3n + 1) {
+  border-radius: 50px;
+  background-color: #ffffff;
+}
+
+tr:nth-child(3n + 2) {
+  border-radius: 50px;
+  background-color: #ebded4;
+}
+
+tr:nth-child(3n + 3) {
+  border-radius: 50px;
+  background-color: #c47f38;
+}
+.cell {
+  padding: 8px;
+  width: 14.28%;
+  font-size: 15px;
+  text-align: left;
+  background-color: rgb(229, 230, 232);
+  border-bottom: 2px solid black;
+}
+.empty-cell {
+  background-color: rgb(229, 230, 232);
+  border: none;
+  padding: 0px;
+  border-bottom: 2px solid black;
+  margin-left: 0px;
+  text-align: left;
+}
+tfoot tr {
+  background-color: #ffffff;
+}
+#Nut_T {
+  max-width: 1000px;
+  margin: 40px auto 40px auto;
+}
+
+#PicNname{
+  display : inline-block;
+  font-size: 70px;
+  border-bottom: 2px solid black;
+}
+#PicNname img {
+  vertical-align: bottom;
+  width: 90px;
+  height: auto;
+  margin-right: 0px;
+}
+
+input,
+select {
+  width: 70px;
+  padding: 4px 8px;
+}
+.timeFoot {
+  width: 200px;
+}
+#plus_button {
+  width: 20px;
+  border-radius: 100px;
+  padding-left: 4px;
+  text-align: center;
+}
+.subjectHead {
+  background-color: rgb(229, 230, 232);
+  text-align: left;
+  border-bottom: 2px solid black;
+}
+.dateTimehead {
+  background-color: rgb(229, 230, 232);
+  padding: 8px;
+  text-align: right;
+  margin-right: 2px;
+  border-bottom: 2px solid black;
+}
+.fill_date {
+  width: 20px;
+}
+.dateBody {
+  width: 14.28%;
+}
+.timeBody {
+  text-align: left;
+  font-size: 15px;
+  width: 100px;
+}
+#select_foot {
+  padding-right: 8px;
+  margin-right: 8px;
+}
+
+/* about pop up */
+.popupInput {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 45%;
+  width: 100px;
+  height: 100%;
+  z-index: 1;
+}
+.enterText {
+  text-align: center;
+  left: 0%;
+}
+
+.popupInput-content h2 {
+  text-align: left;
+  font-size: 18px;
+  margin-top: 0px;
+}
+.popupInput-content input {
+  width: 120px;
+  height: 20px;
+  border-width: 0.5px;
+  border-radius: 20px;
+}
+.popupInput-content button {
+  width: 50px;
+  height: 30px;
+  padding-left: 4px;
+  text-align: center;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #ca8b4b;
+  border-width: 0px;
+}
+.popupInput-content {
+  background-color: rgb(229, 227, 217);
+  width: 200px;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  border-radius: 20px;
+}
+.closeInput {
+  align-items: right;
+  margin-left: 190px;
+  margin-top: 0px;
+}
+/* view popup */
+.con_view_popup {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(229, 230, 232);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.view_popup {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  width: 200px;
+  background: rgb(229, 227, 217);
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  visibility: hidden;
+  transition: transform 0.4s;
+}
+.view_popup h3 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.view_popup h4 {
+  font-size: 15px;
+  text-align: center;
+}
+.view_popup li {
+  text-align: left;
+}
+.view_popup button {
+  margin-top: 10px;
+  background-color: #ab2020;
+  text-decoration-color: #ffffff;
+  color: #ffffff;
+}
+.open-view_popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/*scrollbar*/
+
+#main_table {
+  max-height: 300px; /* Set your preferred height here */
+  overflow-y: auto;
+  overflow-x: auto;
+}
+th {
+    position: sticky;
+    top: 0;
+}
+tfoot tr {
+    position: sticky;
+    bottom: 0;
+}
